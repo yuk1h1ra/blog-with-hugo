@@ -1,6 +1,6 @@
-[ja]
+[en]
   title = "Zzossig's Blog"
   languageName = "Japanese"
   weight = 2
   languagedir = "ltr"
-  contentdir = "content/ja"
+  contentdir = "content"
