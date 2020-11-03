@@ -1,7 +1,7 @@
-logoText = "Zzo" # Logo text that appears in the site navigation bar.
+logoText = "Yuk1h1ra's Happy Hacking" # Logo text that appears in the site navigation bar.
 logoType = "short" # long, short -> short: squre shape includes logo text, long: rectangle shape not includes logo text
 logo = true # Logo that appears in the site navigation bar.
-description = "The Zzo theme for Hugo example site." # for SEO
+description = "ハッキングからセキュリティまで、日々の学びをまとめた個人ブログ" # for SEO
 custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
 useFaviconGenerator = false # https://www.favicon-generator.org/
@@ -47,14 +47,14 @@ talksPaginate = 8 # items per page
 talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
-myname = "zzossig"
-email = "zzossig@gmail.com"
-whoami = "Web Developer"
+myname = "Yuk1h1ra"
+email = ""
+whoami = "Security Engineer"
 bioImageUrl = "" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
 useGravatar = false # we use this option highest priority
-location = "Seoul, Korea"
-organization = "Hugo"
-link = "https://github.com/zzossig/hugo-theme-zzo"
+location = "Japan"
+organization = ""
+link = "https://github.com/yuk1h1ra"
 
 # sidebar
 enableBio = true # in home page sidebar
@@ -79,7 +79,7 @@ enableSidebarPostsByOrder = false # another lists in the sidebar
 showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
 showFeedLinks = true # RSS Feed 
 showSocialLinks = true # email, facebook, twitter ...
-enableLangChange = true # show button at bottom left of footer.
+enableLangChange = false # show button at bottom left of footer.
 
 # service
 googleTagManager = "" # GTM-XXXXXX
@@ -139,11 +139,11 @@ commento = false
   dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions] # if set, social icons will show up.
-  email = "mailto:your@email.com"
+  email = ""
   phone = ""
-  facebook = "http://example.org/"
-  twitter = "http://example.org/"
-  github = "https://github.com/zzossig/hugo-theme-zzo"
+  facebook = ""
+  twitter = "https://twitter.com/yuk1h1ra_JP"
+  github = "https://github.com/yuk1h1ra"
   stack-overflow = ""
   instagram = ""
   google-plus = ""
@@ -191,6 +191,12 @@ commento = false
 [[share]]
   name = "twitter"
   username = ""
+[[share]]
+  name = "reddit"
+[[share]]
+  name = "line"
+[[share]]
+  name = "telegram"
 
 [[footerLinks]]
   name = ""
