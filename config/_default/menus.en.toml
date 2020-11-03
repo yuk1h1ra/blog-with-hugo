@@ -1,7 +1,7 @@
 [[main]]
-  identifier = "about"
-  name = "about"
-  url = "about"
+  identifier = "posts"
+  name = "posts"
+  url = "posts"
   weight = 1
 
 [[main]]
@@ -11,7 +11,7 @@
   weight = 2
 
 [[main]]
-  identifier = "posts"
-  name = "posts"
-  url = "posts"
+  identifier = "about"
+  name = "about"
+  url = "about"
   weight = 3
