@@ -5,23 +5,17 @@ description:
 type: about
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+# Who am I
 
-Hugo makes use of a variety of open source projects including:
+当ブログを管理しているYuk1h1raです。
+アイコンがジェイソンマスクですが、ホラーが大の苦手です。もちろん**13日の金曜日**なんて、怖くて見られません。
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+大学ではコンピュータ・サイエンス(CS)を専攻し、在学中に基本情報・応用情報を取得しました。四年次には情報セキュリティの研究室に所属し、マルウェア対策ワークショップであるMWSに、マルウェアの動的解析チームとして参加しました。卒業論文ではPGPにおける脆弱性についての研究を行いました。
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+何かご意見・ご要望がありましたら、下記フッターにあるTwitterのDMに連絡ください。
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+# What's this blog
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+当ブログではセキュリティツールの使い方や、WriteUP、覚えておいたほうが良いTipsなど、サイバーセキュリティに関する事柄ついて掲載しています。ブログ記事を読む前に [免責事項](/disclaimer) を一読し、不正アクセス禁止法に触れないようお願いいたします。
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
-
-
+サイバーセキュリティを学ぶ人達の手助けになれれば幸いです。
