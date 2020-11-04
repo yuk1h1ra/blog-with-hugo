@@ -199,8 +199,8 @@ commento = false
   name = "telegram"
 
 [[footerLinks]]
-  name = ""
-  link = ""
+  name = "プライバシーポリシー"
+  link = "/privacy-policy"
 [[footerLinks]]
-  name = ""
-  link = ""
+  name = "免責事項"
+  link = "/disclaimer"
