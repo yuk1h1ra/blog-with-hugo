@@ -1,7 +1,7 @@
-logoText = "Yuk1h1ra's Happy Hacking" # Logo text that appears in the site navigation bar.
+logoText = "YKK" # Logo text that appears in the site navigation bar.
 logoType = "short" # long, short -> short: squre shape includes logo text, long: rectangle shape not includes logo text
 logo = true # Logo that appears in the site navigation bar.
-description = "ハッキングからセキュリティまで、日々の学びをまとめた個人ブログ" # for SEO
+description = "ハッキング, CTF, WriteUP, Toolsなど、サイバーセキュリティに特化した個人ブログ" # for SEO
 custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
 useFaviconGenerator = false # https://www.favicon-generator.org/
