@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on YKK</title>
-    <link>http://example.org/series/</link>
+    <link>http://blog.yukihira.me/series/</link>
     <description>Recent content in Series on YKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 03 Nov 2020 17:25:11 +0900</lastBuildDate>
     
-        <atom:link href="http://example.org/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.yukihira.me/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>Test2</title>
-        <link>http://example.org/series/test2/</link>
+        <link>http://blog.yukihira.me/series/test2/</link>
         <pubDate>Tue, 03 Nov 2020 17:25:11 +0900</pubDate>
         
         
-        <guid>http://example.org/series/test2/</guid>
+        <guid>http://blog.yukihira.me/series/test2/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -40,11 +40,11 @@
       
       <item>
         <title>Test</title>
-        <link>http://example.org/series/test/</link>
+        <link>http://blog.yukihira.me/series/test/</link>
         <pubDate>Tue, 03 Nov 2020 17:11:14 +0900</pubDate>
         
         
-        <guid>http://example.org/series/test/</guid>
+        <guid>http://blog.yukihira.me/series/test/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>

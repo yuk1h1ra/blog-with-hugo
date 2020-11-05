@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>sample on YKK</title>
-    <link>http://example.org/tags/sample/</link>
+    <link>http://blog.yukihira.me/tags/sample/</link>
     <description>Recent content in sample on YKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 03 Nov 2020 17:11:14 +0900</lastBuildDate>
     
-        <atom:link href="http://example.org/tags/sample/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.yukihira.me/tags/sample/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>Change Default Archetype</title>
-        <link>http://example.org/posts/change-default-archetype/</link>
+        <link>http://blog.yukihira.me/posts/change-default-archetype/</link>
         <pubDate>Tue, 03 Nov 2020 17:11:14 +0900</pubDate>
         
         <atom:modified>Tue, 03 Nov 2020 17:11:14 +0900</atom:modified>
-        <guid>http://example.org/posts/change-default-archetype/</guid>
+        <guid>http://blog.yukihira.me/posts/change-default-archetype/</guid>
         <description>Code Syntax Highlighting Verify the following code blocks render as code blocks and highlight properly. More about tuning syntax highlighting is the Hugo documentation. Diff 1 2 3 4 5 6 7 8 9 10 *** /path/to/original &amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; --- /path/to/new &amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line *** /path/to/original</description>
         
         <dc:creator>Yuk1h1ra</dc:creator>

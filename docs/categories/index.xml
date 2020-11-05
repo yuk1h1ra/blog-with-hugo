@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on YKK</title>
-    <link>http://example.org/categories/</link>
+    <link>http://blog.yukihira.me/categories/</link>
     <description>Recent content in Categories on YKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 03 Nov 2020 17:25:11 +0900</lastBuildDate>
     
-        <atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.yukihira.me/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>LeaningHugo2</title>
-        <link>http://example.org/categories/leaninghugo2/</link>
+        <link>http://blog.yukihira.me/categories/leaninghugo2/</link>
         <pubDate>Tue, 03 Nov 2020 17:25:11 +0900</pubDate>
         
         
-        <guid>http://example.org/categories/leaninghugo2/</guid>
+        <guid>http://blog.yukihira.me/categories/leaninghugo2/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -40,11 +40,11 @@
       
       <item>
         <title>LeaningHugo</title>
-        <link>http://example.org/categories/leaninghugo/</link>
+        <link>http://blog.yukihira.me/categories/leaninghugo/</link>
         <pubDate>Tue, 03 Nov 2020 17:11:14 +0900</pubDate>
         
         
-        <guid>http://example.org/categories/leaninghugo/</guid>
+        <guid>http://blog.yukihira.me/categories/leaninghugo/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>

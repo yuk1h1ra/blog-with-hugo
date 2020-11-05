@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Posts on YKK</title>
-    <link>http://example.org/posts/</link>
+    <link>http://blog.yukihira.me/posts/</link>
     <description>Recent content in Posts on YKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 03 Nov 2020 18:44:44 +0900</lastBuildDate>
     
-        <atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.yukihira.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>ContentDirTest</title>
-        <link>http://example.org/posts/2020/11/contentdirtest/</link>
+        <link>http://blog.yukihira.me/posts/2020/11/contentdirtest/</link>
         <pubDate>Tue, 03 Nov 2020 18:44:44 +0900</pubDate>
         
         <atom:modified>Tue, 03 Nov 2020 18:44:44 +0900</atom:modified>
-        <guid>http://example.org/posts/2020/11/contentdirtest/</guid>
+        <guid>http://blog.yukihira.me/posts/2020/11/contentdirtest/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -52,11 +52,11 @@
       
       <item>
         <title>Layout Dir Test</title>
-        <link>http://example.org/posts/2020/11/layoutdir/layout-dir-test/</link>
+        <link>http://blog.yukihira.me/posts/2020/11/layoutdir/layout-dir-test/</link>
         <pubDate>Tue, 03 Nov 2020 18:28:39 +0900</pubDate>
         
         <atom:modified>Tue, 03 Nov 2020 18:28:39 +0900</atom:modified>
-        <guid>http://example.org/posts/2020/11/layoutdir/layout-dir-test/</guid>
+        <guid>http://blog.yukihira.me/posts/2020/11/layoutdir/layout-dir-test/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -82,11 +82,11 @@
       
       <item>
         <title>Directroy Check2</title>
-        <link>http://example.org/posts/2020/11/test-directory2/directroy-check2/</link>
+        <link>http://blog.yukihira.me/posts/2020/11/test-directory2/directroy-check2/</link>
         <pubDate>Tue, 03 Nov 2020 18:04:18 +0900</pubDate>
         
         <atom:modified>Tue, 03 Nov 2020 18:04:18 +0900</atom:modified>
-        <guid>http://example.org/posts/2020/11/test-directory2/directroy-check2/</guid>
+        <guid>http://blog.yukihira.me/posts/2020/11/test-directory2/directroy-check2/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -112,11 +112,11 @@
       
       <item>
         <title>Directroy Check</title>
-        <link>http://example.org/posts/2020/11/test-directory/directroy-check/</link>
+        <link>http://blog.yukihira.me/posts/2020/11/test-directory/directroy-check/</link>
         <pubDate>Tue, 03 Nov 2020 17:59:39 +0900</pubDate>
         
         <atom:modified>Tue, 03 Nov 2020 17:59:39 +0900</atom:modified>
-        <guid>http://example.org/posts/2020/11/test-directory/directroy-check/</guid>
+        <guid>http://blog.yukihira.me/posts/2020/11/test-directory/directroy-check/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -142,11 +142,11 @@
       
       <item>
         <title>Directroy Check</title>
-        <link>http://example.org/posts/2020/11/directory/directroy-check/</link>
+        <link>http://blog.yukihira.me/posts/2020/11/directory/directroy-check/</link>
         <pubDate>Tue, 03 Nov 2020 17:57:14 +0900</pubDate>
         
         <atom:modified>Tue, 03 Nov 2020 17:57:14 +0900</atom:modified>
-        <guid>http://example.org/posts/2020/11/directory/directroy-check/</guid>
+        <guid>http://blog.yukihira.me/posts/2020/11/directory/directroy-check/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -172,11 +172,11 @@
       
       <item>
         <title>Tags Categories Series Test</title>
-        <link>http://example.org/posts/tags-categories-series-test/</link>
+        <link>http://blog.yukihira.me/posts/tags-categories-series-test/</link>
         <pubDate>Tue, 03 Nov 2020 17:25:11 +0900</pubDate>
         
         <atom:modified>Tue, 03 Nov 2020 17:25:11 +0900</atom:modified>
-        <guid>http://example.org/posts/tags-categories-series-test/</guid>
+        <guid>http://blog.yukihira.me/posts/tags-categories-series-test/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -212,11 +212,11 @@
       
       <item>
         <title>Change Default Archetype</title>
-        <link>http://example.org/posts/change-default-archetype/</link>
+        <link>http://blog.yukihira.me/posts/change-default-archetype/</link>
         <pubDate>Tue, 03 Nov 2020 17:11:14 +0900</pubDate>
         
         <atom:modified>Tue, 03 Nov 2020 17:11:14 +0900</atom:modified>
-        <guid>http://example.org/posts/change-default-archetype/</guid>
+        <guid>http://blog.yukihira.me/posts/change-default-archetype/</guid>
         <description>Code Syntax Highlighting Verify the following code blocks render as code blocks and highlight properly. More about tuning syntax highlighting is the Hugo documentation. Diff 1 2 3 4 5 6 7 8 9 10 *** /path/to/original &amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; --- /path/to/new &amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line *** /path/to/original</description>
         
         <dc:creator>Yuk1h1ra</dc:creator>

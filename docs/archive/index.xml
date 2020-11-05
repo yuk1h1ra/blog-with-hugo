@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Archive on YKK</title>
-    <link>http://example.org/archive/</link>
+    <link>http://blog.yukihira.me/archive/</link>
     <description>Recent content in Archive on YKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 03 Nov 2020 12:54:04 +0900</lastBuildDate>
     
-        <atom:link href="http://example.org/archive/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.yukihira.me/archive/index.xml" rel="self" type="application/rss+xml" />
     
     
     
