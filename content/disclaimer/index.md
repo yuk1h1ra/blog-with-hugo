@@ -1,5 +1,5 @@
 ---
-title: "Disclaimer"
+title: "免責事項"
 date: 2020-11-04T11:22:54+09:00
 description:
 draft: false
