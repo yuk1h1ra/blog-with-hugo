@@ -14,7 +14,7 @@ notAllowedTypesInArchive = ["about", "talks", "showcase", "privacy-policy", "dis
 notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery", "privacy-policy", "disclaimer"]
 enablePinnedPosts = true # show pinned posts first in the main view
 
-viewportSize = "wide" # widest, wider, wide, normal, narrow
+viewportSize = "normal" # widest, wider, wide, normal, narrow
 enableUiAnimation = true
 hideSingleContentsWhenJSDisabled = false
 minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
