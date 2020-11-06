@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on YKK</title>
-    <link>http://blog.yukihira.me/tags/</link>
+    <link>http://blog.yuk1h1ra.me/tags/</link>
     <description>Recent content in Tags on YKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 03 Nov 2020 17:25:11 +0900</lastBuildDate>
     
-        <atom:link href="http://blog.yukihira.me/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.yuk1h1ra.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>default</title>
-        <link>http://blog.yukihira.me/tags/default/</link>
+        <link>http://blog.yuk1h1ra.me/tags/default/</link>
         <pubDate>Tue, 03 Nov 2020 17:25:11 +0900</pubDate>
         
         
-        <guid>http://blog.yukihira.me/tags/default/</guid>
+        <guid>http://blog.yuk1h1ra.me/tags/default/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -40,11 +40,11 @@
       
       <item>
         <title>sample2</title>
-        <link>http://blog.yukihira.me/tags/sample2/</link>
+        <link>http://blog.yuk1h1ra.me/tags/sample2/</link>
         <pubDate>Tue, 03 Nov 2020 17:25:11 +0900</pubDate>
         
         
-        <guid>http://blog.yukihira.me/tags/sample2/</guid>
+        <guid>http://blog.yuk1h1ra.me/tags/sample2/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -58,11 +58,11 @@
       
       <item>
         <title>sample</title>
-        <link>http://blog.yukihira.me/tags/sample/</link>
+        <link>http://blog.yuk1h1ra.me/tags/sample/</link>
         <pubDate>Tue, 03 Nov 2020 17:11:14 +0900</pubDate>
         
         
-        <guid>http://blog.yukihira.me/tags/sample/</guid>
+        <guid>http://blog.yuk1h1ra.me/tags/sample/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
