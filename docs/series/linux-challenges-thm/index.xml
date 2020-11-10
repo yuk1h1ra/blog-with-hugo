@@ -6,15 +6,15 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>CTF on Yuk1h1ra&#39;s Knowledge Kingdom</title>
-    <link>http://blog.yuk1h1ra.me/categories/ctf/</link>
-    <description>Recent content in CTF on Yuk1h1ra&#39;s Knowledge Kingdom</description>
+    <title>Linux Challenges - THM on Yuk1h1ra&#39;s Knowledge Kingdom</title>
+    <link>http://blog.yuk1h1ra.me/series/linux-challenges-thm/</link>
+    <description>Recent content in Linux Challenges - THM on Yuk1h1ra&#39;s Knowledge Kingdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 10 Nov 2020 08:43:35 +0900</lastBuildDate>
     
-        <atom:link href="http://blog.yuk1h1ra.me/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.yuk1h1ra.me/series/linux-challenges-thm/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -59,48 +59,6 @@
           
             
               <category>Linux Challenges - THM</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>【Hacker101】Micro-CMS V1を解いてみた【WriteUP】</title>
-        <link>http://blog.yuk1h1ra.me/posts/2020/06/micro-cms-v1/</link>
-        <pubDate>Tue, 02 Jun 2020 12:57:41 +0900</pubDate>
-        
-        <atom:modified>Tue, 02 Jun 2020 12:57:41 +0900</atom:modified>
-        <guid>http://blog.yuk1h1ra.me/posts/2020/06/micro-cms-v1/</guid>
-        <description>注意 CTFの解法が以下に載っています。自力で解きたい方は解法を見る前にブラウザバックしてください。 概要 Micro-CMS v1ではMarkdown形式で記述さ</description>
-        
-        <dc:creator>Yuk1h1ra</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>writeup</category>
-            
-          
-            
-              <category>hacker101</category>
-            
-          
-            
-              <category>ctf</category>
-            
-          
-        
-        
-          
-            
-              <category>CTF</category>
-            
-          
-        
-        
-          
             
           
         

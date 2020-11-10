@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 18 Oct 2020 13:57:51 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2020 08:43:35 +0900</lastBuildDate>
     
         <atom:link href="http://blog.yuk1h1ra.me/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,12 +21,12 @@
 
       
       <item>
-        <title>BugBounty</title>
-        <link>http://blog.yuk1h1ra.me/categories/bugbounty/</link>
-        <pubDate>Sun, 18 Oct 2020 13:57:51 +0900</pubDate>
+        <title>CTF</title>
+        <link>http://blog.yuk1h1ra.me/categories/ctf/</link>
+        <pubDate>Tue, 10 Nov 2020 08:43:35 +0900</pubDate>
         
         
-        <guid>http://blog.yuk1h1ra.me/categories/bugbounty/</guid>
+        <guid>http://blog.yuk1h1ra.me/categories/ctf/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -39,12 +39,12 @@
       </item>
       
       <item>
-        <title>CTF</title>
-        <link>http://blog.yuk1h1ra.me/categories/ctf/</link>
-        <pubDate>Tue, 02 Jun 2020 12:57:41 +0900</pubDate>
+        <title>BugBounty</title>
+        <link>http://blog.yuk1h1ra.me/categories/bugbounty/</link>
+        <pubDate>Sun, 18 Oct 2020 13:57:51 +0900</pubDate>
         
         
-        <guid>http://blog.yuk1h1ra.me/categories/ctf/</guid>
+        <guid>http://blog.yuk1h1ra.me/categories/bugbounty/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
