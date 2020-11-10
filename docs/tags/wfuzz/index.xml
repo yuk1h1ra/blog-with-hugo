@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>wfuzz on Yuk1h1ra&#39;s Knowledge Kingdom</title>
-    <link>http://blog.yuk1h1ra.me/tags/wfuzz/</link>
+    <link>https://blog.yuk1h1ra.me/tags/wfuzz/</link>
     <description>Recent content in wfuzz on Yuk1h1ra&#39;s Knowledge Kingdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 10 Oct 2020 13:21:33 +0900</lastBuildDate>
     
-        <atom:link href="http://blog.yuk1h1ra.me/tags/wfuzz/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.yuk1h1ra.me/tags/wfuzz/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>BurpSuiteとWfuzzのwordlistを用いてSQLインジェクションをしてみた</title>
-        <link>http://blog.yuk1h1ra.me/posts/2020/10/burpsuite-wfuzz-sqlinjection/</link>
+        <link>https://blog.yuk1h1ra.me/posts/2020/10/burpsuite-wfuzz-sqlinjection/</link>
         <pubDate>Sat, 10 Oct 2020 13:21:33 +0900</pubDate>
         
         <atom:modified>Sat, 10 Oct 2020 13:21:33 +0900</atom:modified>
-        <guid>http://blog.yuk1h1ra.me/posts/2020/10/burpsuite-wfuzz-sqlinjection/</guid>
+        <guid>https://blog.yuk1h1ra.me/posts/2020/10/burpsuite-wfuzz-sqlinjection/</guid>
         <description>始めに Webアプリケーションの脆弱性診断をする際にプロキシツールを持ちいて診断をしているかと思います。 今回はBurpSuiteとWfuzzの</description>
         
         <dc:creator>Yuk1h1ra</dc:creator>

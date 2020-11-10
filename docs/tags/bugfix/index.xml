@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>bugfix on Yuk1h1ra&#39;s Knowledge Kingdom</title>
-    <link>http://blog.yuk1h1ra.me/tags/bugfix/</link>
+    <link>https://blog.yuk1h1ra.me/tags/bugfix/</link>
     <description>Recent content in bugfix on Yuk1h1ra&#39;s Knowledge Kingdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 18 Oct 2020 13:57:51 +0900</lastBuildDate>
     
-        <atom:link href="http://blog.yuk1h1ra.me/tags/bugfix/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.yuk1h1ra.me/tags/bugfix/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>BurpSuiteのRenderでUnable to render responseが出るときの解決法</title>
-        <link>http://blog.yuk1h1ra.me/posts/2020/10/burpsuite-unable-to-render-response/</link>
+        <link>https://blog.yuk1h1ra.me/posts/2020/10/burpsuite-unable-to-render-response/</link>
         <pubDate>Sun, 18 Oct 2020 13:57:51 +0900</pubDate>
         
         <atom:modified>Sun, 18 Oct 2020 13:57:51 +0900</atom:modified>
-        <guid>http://blog.yuk1h1ra.me/posts/2020/10/burpsuite-unable-to-render-response/</guid>
+        <guid>https://blog.yuk1h1ra.me/posts/2020/10/burpsuite-unable-to-render-response/</guid>
         <description>始めに 自分はParrot Security OSを仮想環境下で使用しています。その時にBurpSuiteのWebレンダリング機能がうまく機能していなかったため</description>
         
         <dc:creator>Yuk1h1ra</dc:creator>

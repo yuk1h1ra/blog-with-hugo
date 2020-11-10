@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on Yuk1h1ra&#39;s Knowledge Kingdom</title>
-    <link>http://blog.yuk1h1ra.me/series/</link>
+    <link>https://blog.yuk1h1ra.me/series/</link>
     <description>Recent content in Series on Yuk1h1ra&#39;s Knowledge Kingdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 10 Nov 2020 08:43:35 +0900</lastBuildDate>
     
-        <atom:link href="http://blog.yuk1h1ra.me/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.yuk1h1ra.me/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>Linux Challenges - THM</title>
-        <link>http://blog.yuk1h1ra.me/series/linux-challenges-thm/</link>
+        <link>https://blog.yuk1h1ra.me/series/linux-challenges-thm/</link>
         <pubDate>Tue, 10 Nov 2020 08:43:35 +0900</pubDate>
         
         
-        <guid>http://blog.yuk1h1ra.me/series/linux-challenges-thm/</guid>
+        <guid>https://blog.yuk1h1ra.me/series/linux-challenges-thm/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>

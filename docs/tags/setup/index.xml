@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>setup on Yuk1h1ra&#39;s Knowledge Kingdom</title>
-    <link>http://blog.yuk1h1ra.me/tags/setup/</link>
+    <link>https://blog.yuk1h1ra.me/tags/setup/</link>
     <description>Recent content in setup on Yuk1h1ra&#39;s Knowledge Kingdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 24 Sep 2020 13:04:27 +0900</lastBuildDate>
     
-        <atom:link href="http://blog.yuk1h1ra.me/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.yuk1h1ra.me/tags/setup/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>セキュリティに特化したParrot Security OSをVirtualBoxにインストールするまで</title>
-        <link>http://blog.yuk1h1ra.me/posts/2020/09/install-parrot-security-os/</link>
+        <link>https://blog.yuk1h1ra.me/posts/2020/09/install-parrot-security-os/</link>
         <pubDate>Thu, 24 Sep 2020 13:04:27 +0900</pubDate>
         
         <atom:modified>Thu, 24 Sep 2020 13:04:27 +0900</atom:modified>
-        <guid>http://blog.yuk1h1ra.me/posts/2020/09/install-parrot-security-os/</guid>
+        <guid>https://blog.yuk1h1ra.me/posts/2020/09/install-parrot-security-os/</guid>
         <description>Parrot Security OS とは Parrot Security OSはイタリアで開発が行われている、セキュリティとプライバシーを念頭に置いて設計されたDebianベースのGNU/Linuxで</description>
         
         <dc:creator>Yuk1h1ra</dc:creator>

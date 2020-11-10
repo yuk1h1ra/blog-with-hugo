@@ -7,14 +7,14 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on Yuk1h1ra&#39;s Knowledge Kingdom</title>
-    <link>http://blog.yuk1h1ra.me/categories/</link>
+    <link>https://blog.yuk1h1ra.me/categories/</link>
     <description>Recent content in Categories on Yuk1h1ra&#39;s Knowledge Kingdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 10 Nov 2020 08:43:35 +0900</lastBuildDate>
     
-        <atom:link href="http://blog.yuk1h1ra.me/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.yuk1h1ra.me/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -22,11 +22,11 @@
       
       <item>
         <title>CTF</title>
-        <link>http://blog.yuk1h1ra.me/categories/ctf/</link>
+        <link>https://blog.yuk1h1ra.me/categories/ctf/</link>
         <pubDate>Tue, 10 Nov 2020 08:43:35 +0900</pubDate>
         
         
-        <guid>http://blog.yuk1h1ra.me/categories/ctf/</guid>
+        <guid>https://blog.yuk1h1ra.me/categories/ctf/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
@@ -40,11 +40,11 @@
       
       <item>
         <title>BugBounty</title>
-        <link>http://blog.yuk1h1ra.me/categories/bugbounty/</link>
+        <link>https://blog.yuk1h1ra.me/categories/bugbounty/</link>
         <pubDate>Sun, 18 Oct 2020 13:57:51 +0900</pubDate>
         
         
-        <guid>http://blog.yuk1h1ra.me/categories/bugbounty/</guid>
+        <guid>https://blog.yuk1h1ra.me/categories/bugbounty/</guid>
         <description></description>
         
         <dc:creator>Yuk1h1ra</dc:creator>
