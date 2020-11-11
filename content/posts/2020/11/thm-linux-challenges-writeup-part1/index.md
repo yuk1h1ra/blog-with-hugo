@@ -1,5 +1,5 @@
 ---
-title: "【THM: Try Hack Me】Linux Challengesを解いてみた【WriteUP】"
+title: "【THM: Try Hack Me】Linux Challengesを解いてみた - Part1【WriteUP】"
 date: 2020-11-10T08:43:35+09:00
 description:
 draft: false
