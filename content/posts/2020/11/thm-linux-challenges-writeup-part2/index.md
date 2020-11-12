@@ -98,7 +98,34 @@ Nothing to see here!!alice@ip-10-10-239-217:/home/garry$
 alice@ip-10-10-239-217:/home/garry$ strings flag24
 ```
 
-### 
+### Find flag 26 by searching the all files for a string that begins with 4bceb and is 32 characters long. 
+
+```bash
+alice@ip-10-10-179-249:~$ find / -xdev -print0 -type f 2>/dev/null | xargs -0 grep -E '^[a-z0-9]{32}$' 2>/dev/null 
+Binary file /snap/bin/amazon-ssm-agent.ssm-cli matches
+Binary file /var/cache/apt/pkgcache.bin matches
+Binary file /var/cache/apt/srcpkgcache.bin matches
+/var/cache/apache2/mod_cache_disk/config.json:4bceb76f490b24ed577d704c24d6955d
+/var/lib/dbus/machine-id:41da6f3264844132ae79a13a0e1457c3
+/var/log/flagtourteen.txt:71c3a8ad9752666275dadf62a93ef393
+/lib/terminfo/E/flag5.txt:bd8f33216075e5ba07c9ed41261d1703
+/home/bob/.bash_history:9daf3281745c2d75fc6e992ccfdedfcd
+```
+
+### Locate and retrieve flag 27, which is owned by the root user.
+
+```bash
+alice@ip-10-10-179-249:~$ sudo cat /home/flag27 
+6fc0c805702baebb0ecc01ae9e5a0db5
+```
+
+### Whats the linux kernel version?
+
+```bash
+alice@ip-10-10-179-249:~$ uname --kernel-release 
+4.4.0-1075-aws
+```
+
 
 
 ## Task 5 SQL, FTP, Groups and RDP
