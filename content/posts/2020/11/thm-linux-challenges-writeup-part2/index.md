@@ -2,7 +2,7 @@
 title: "【THM: Try Hack Me】Linux Challengesを解いてみた - Part2【WriteUP】"
 date: 2020-11-11T08:50:57+09:00
 description:
-draft: true
+draft: false
 hideToc: false
 enableToc: true
 enableTocContent: false
@@ -21,11 +21,16 @@ image:
 
 # はじめに
 
+[前回](https://blog.yuk1h1ra.me/posts/2020/11/thm-linux-challenges-writeup-part1/)に引き続き、TryHackMeのLinux ChallengesのWriteUPです。
+今回は、Task4までの解法になります。
+
 # WriteUP
 
 ## Task 4 Data Representation, Strings and Permissions
 
 ### Find and retrieve flag 20.
+
+まずは、flag20を確認します。
 
 ```bash
 alice@ip-10-10-239-217:~$ ls
@@ -36,20 +41,25 @@ flag20: ASCII text
 
 alice@ip-10-10-239-217:~$ cat flag20 
 MDJiOWFhYjhhMjk5NzBkYjA4ZWM3N2FlNDI1ZjZlNjg=
+```
 
+中身を見るとflagが暗号化されていました。最後の「=」をみて、base64だろうなということで、pythonで適当にデコードして終わりです。
+
+```bash
 alice@ip-10-10-239-217:~$ python3
 Python 3.5.2 (default, Nov 12 2018, 13:43:14) 
 [GCC 5.4.0 20160609] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import base64
 >>> print(base64.b64decode(b'MDJiOWFhYjhhMjk5NzBkYjA4ZWM3N2FlNDI1ZjZlNjg=').decode())
-02b9aab8a29970db08ec77ae425f6e68
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 >>> 
-
-alice@ip-10-10-239-217:~$ 
 ```
 
 ### Inspect the flag21.php file. Find the flag.
+
+flag21では、普通にcatをするだけでは見つけられないようになっていました。
+自分はvimで開いてしまいましたが、`cat -A`を使う方法もあるそうです。
 
 ```bash
 alice@ip-10-10-239-217:~$ find / 2>/dev/null | grep flag21.php
@@ -59,46 +69,57 @@ alice@ip-10-10-239-217:~$ vim ../bob/flag21.php
 
 ### Locate and read flag 22. Its represented as hex.
 
-```bash
-(中略)
-
-  -r | -revert
-    reverse operation: convert (or patch) hexdump into binary.  If not writing to stdout, xxd writes into its output file without truncating it. Use the combination -r  -p  to
-    read plain hexadecimal dumps without line number information and without a particular column layout. Additional Whitespace and line-breaks are allowed anywhere.
-
-(中略)
-```
+ファイルを確認すると16進で書かれたflagが出てきました。これらをASCIIに変換する必要があります。
+(なんとなく、41を見たらA, 61をみたらaだなという感覚を持っておくといいかもしれないです)
 
 ```bash
 alice@ip-10-10-239-217:~$ xxd -r -p flag22
-9d1ae8d569c83e03d8a8f61568a0fa7dalice@ip-10-10-239-217:~$ 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxalice@ip-10-10-239-217:~$ 
 ```
 
 ### Locate, read and reverse flag 23.
 
+とても便利な`rev`コマンドというのを調べていて見つけたので、それでflagをゲットしました。
+
 ```bash
 alice@ip-10-10-239-217:~$ cat flag23 | rev
-ea52970566f4c090a7348b033852bff5
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 ### Analyse the flag 24 compiled C program. Find a command that might reveal human readable strings when looking in the machine code code.
 
-```bash
-alice@ip-10-10-239-217:~$ find / 2>/dev/null | grep flag24
-/home/garry/flag24
-```
+flag24はC言語で書かれコンパイルされた物だそうです。
+とりあえず`file`でファイルの確認をしていきます。
 
 ```bash
 alice@ip-10-10-239-217:/home/garry$ file flag24 
 flag24: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=d88e59a01b68aa0969e59bb68726cd7bf8ded9bf, not stripped
+```
 
+実行ファイルだったので、これもまた実行してみます。
+
+```bash
 alice@ip-10-10-239-217:/home/garry$ ./flag24 
 Nothing to see here!!alice@ip-10-10-239-217:/home/garry$ 
+```
 
+「ここにはないよ！」と怒られてしまいました。
+CTFで表層解析をする際にとりあえず打っとけ！ということで、`strings`で一発でした。
+
+```bash
 alice@ip-10-10-239-217:/home/garry$ strings flag24
 ```
 
 ### Find flag 26 by searching the all files for a string that begins with 4bceb and is 32 characters long. 
+
+自分は最初以下のコマンドで実行していたのですが、時間がかかりすぎていたり、うまくフラグが取れなかったのでカンニングしちゃいました。
+
+```bash
+$ find / -type f 2>/dev/null | xargs grep -E '^4bceb' 2>/dev/null
+```
+
+考え方はあっていたのですが、細かいオプションとかですかね。。。？
+そのコマンドを使ったことはあるけど、その場しのぎで使っていたのがダメでしたね。少しずつ覚えていけたらなと思います。
 
 ```bash
 alice@ip-10-10-179-249:~$ find / -xdev -print0 -type f 2>/dev/null | xargs -0 grep -E '^[a-z0-9]{32}$' 2>/dev/null 
@@ -114,20 +135,44 @@ Binary file /var/cache/apt/srcpkgcache.bin matches
 
 ### Locate and retrieve flag 27, which is owned by the root user.
 
+flag27はパーミッション関係でした。管理者権限で一発で終わりですね。
+
 ```bash
 alice@ip-10-10-179-249:~$ sudo cat /home/flag27 
-6fc0c805702baebb0ecc01ae9e5a0db5
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 ### Whats the linux kernel version?
 
+カーネルのバージョンの確認方法ですが、自分はオプションで`--kernel-release`を使っちゃいました。
+`uname -a`とかでも行けると思います。
+
 ```bash
 alice@ip-10-10-179-249:~$ uname --kernel-release 
-4.4.0-1075-aws
+4.4.xxxxxxxxxx
 ```
 
+### Find the file called flag 29 and do the following operations on it:
 
+> 1. Remove all spaces in file.
+> 2. Remove all new line spaces.
+> 3. Split by comma and get the last element in the split.
 
-## Task 5 SQL, FTP, Groups and RDP
+これは最初カンマの直前の文字を列挙していくものだと思っていたので、だいぶ変なことをやっていました。
+調べていくなかで、`tr`コマンドというのを見つけたので、それも使ってflagをゲットしています。
+やっていることは、1,2,3の順番通りにしているので理解はしやすいかと思います。
+
+```bash
+alice@ip-10-10-97-2:/home/garry$ cat flag29 | tr -d ' ' | tr -d '\n' | sed 's/,/,\n/g' 
+(中略)
+meinecaseferrivulputate,
+atmelpericulisocurreret.Dicoverearaccusamusuex,
+xxxxxxxxxxxxxxxxxxxxx.alice@ip-10-10-97-2:/home/garry$ 
+```
 
 # 終わりに
+
+今回はTryHackMeのLinux ChallengesのTask4のWriteUPを書きました。
+使ったことはあるけど、詳しくは知らない、なんとなく名前だけ知っているコマンドなどもあり、こうやって使うのか〜と勉強になりながら解いていくことができました。
+
+次回のTask5にて、Linux ChallengesのWriteUPは終わりになります。

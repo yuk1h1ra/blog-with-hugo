@@ -106,6 +106,74 @@
 
 
     
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    var footNoteRefs = document.querySelectorAll('.footnote-ref');
+    var footNoteBackRefs = document.querySelectorAll('.footnote-backref');
+
+    footNoteRefs ? 
+    footNoteRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function () {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+
+    footNoteBackRefs ? 
+    footNoteBackRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function() {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+    
+
+
+    
     var summaryContainer = document.querySelector('.summary__container');
     var searchResult = document.querySelector('.search-result');
     var searchResultCloseBtn = document.querySelector('.search-result__close');
@@ -1260,9 +1328,9 @@
 <meta name="description" content="ハッキング, CTF, WriteUP, Toolsなど、サイバーセキュリティに特化した個人ブログ" />
 
 
-<meta name="created" content="2020-11-10T08:43:35&#43;0900">
-<meta name="modified" content="2020-11-10T08:43:35&#43;0900">
-<meta property="article:published_time" content="2020-11-10T08:43:35&#43;0900">
+<meta name="created" content="2020-11-11T08:50:57&#43;0900">
+<meta name="modified" content="2020-11-11T08:50:57&#43;0900">
+<meta property="article:published_time" content="2020-11-11T08:50:57&#43;0900">
 
 <meta name="author" content="Yuk1h1ra">
 
@@ -1580,7 +1648,39 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://blog.yuk1h1ra.me/posts/2020/11/thm-linux-challenges-writeup-part1/'>【THM: Try Hack Me】Linux Challengesを解いてみた【WriteUP】</a> </h5>
+        <h5 class="title h5"><a href='https://blog.yuk1h1ra.me/posts/2020/11/thm-linux-challenges-writeup-part2/'>【THM: Try Hack Me】Linux Challengesを解いてみた - Part2【WriteUP】</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="Written At" dir="ltr">📅&nbsp;Nov 11, 2020 </time>
+          
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;3&nbsp;min read </span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            はじめに 前回に引き続き、TryHackMeのLinux ChallengesのWriteUPです。 今回は、Task4までの解法になります。 WriteUP Task
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+            
+                
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://blog.yuk1h1ra.me/posts/2020/11/thm-linux-challenges-writeup-part1/'>【THM: Try Hack Me】Linux Challengesを解いてみた - Part1【WriteUP】</a> </h5>
         <h6 class="subtitle caption">
           <time title="Written At" dir="ltr">📅&nbsp;Nov 10, 2020 </time>
           
@@ -2118,7 +2218,11 @@
             <ul class="sidebar-recent__ul">
                 
                     <li>
-                        <a href="/posts/2020/11/thm-linux-challenges-writeup-part1/" class="sidebar-recent__a p2">【THM: Try Hack Me】Linux Challengesを解いてみた【WriteUP】</a>
+                        <a href="/posts/2020/11/thm-linux-challenges-writeup-part2/" class="sidebar-recent__a p2">【THM: Try Hack Me】Linux Challengesを解いてみた - Part2【WriteUP】</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/2020/11/thm-linux-challenges-writeup-part1/" class="sidebar-recent__a p2">【THM: Try Hack Me】Linux Challengesを解いてみた - Part1【WriteUP】</a>
                     </li>
                 
                     <li>
@@ -2131,10 +2235,6 @@
                 
                     <li>
                         <a href="/posts/2020/10/metasploit-framework/" class="sidebar-recent__a p2">Metasploit Frameworkを初心者が学習するのに役立つサイト集</a>
-                    </li>
-                
-                    <li>
-                        <a href="/posts/2020/09/metasploitable3/" class="sidebar-recent__a p2">Metasploitable3の環境構築</a>
                     </li>
                 
             </ul>
@@ -2201,7 +2301,7 @@
                         ctf
                     </span>
                     <span class="taxo__num" dir="auto">
-                        2
+                        3
                     </span>
                 </a>
             </span>
@@ -2292,7 +2392,7 @@
                         tryhackme
                     </span>
                     <span class="taxo__num" dir="auto">
-                        1
+                        2
                     </span>
                 </a>
             </span>
@@ -2318,7 +2418,7 @@
                         writeup
                     </span>
                     <span class="taxo__num" dir="auto">
-                        2
+                        3
                     </span>
                 </a>
             </span>
@@ -2357,7 +2457,7 @@
                         CTF
                     </span>
                     <span class="taxo__num" dir="auto">
-                        2
+                        3
                     </span>
                 </a>
             </span>
@@ -2383,7 +2483,7 @@
                         Linux Challenges - THM
                     </span>
                     <span class="taxo__num" dir="auto">
-                        1
+                        2
                     </span>
                 </a>
             </span>
