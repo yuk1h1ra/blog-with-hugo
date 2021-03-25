@@ -1,4 +1,4 @@
-# Blog with Hugo
+# Yuk1h1ra's Knowledge Kingdom
 
 ## 概要
 
@@ -29,3 +29,21 @@ Hugoでは、様々なテーマを選択することができます。
 
 選定理由は、モバイル対応しているとか、SEO対策がテーマに盛り込まれているとか、Syntax Highlightに対応しているとかではありません。
 単純に、テーマが**カッコイイ**からです。
+
+## コマンド類
+
+### 新しい記事の作成
+
+ブログのディレクトリを/[year]/[month]/[title]に設定しているため、以下のコマンドで一発で作成できる
+
+```bash
+hugo-new-post title
+```
+
+### テーマリポジトリの更新
+
+submoduleに追加したテーマがアップデートされた際に、それをYKKでも反映させるには以下のコマンドを実行する
+
+```bash
+git submodule update --remote
+```
