@@ -194,6 +194,8 @@ commento = false
 [[share]]
   name = "reddit"
 [[share]]
+  name = "linkedin"
+[[share]]
   name = "line"
 [[share]]
   name = "telegram"
