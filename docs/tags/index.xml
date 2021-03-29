@@ -12,16 +12,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 04 Dec 2020 09:06:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 28 Mar 2021 12:50:28 +0900</lastBuildDate>
     
         <atom:link href="https://blog.yuk1h1ra.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
+        <title>basic-pentesting</title>
+        <link>https://blog.yuk1h1ra.me/tags/basic-pentesting/</link>
+        <pubDate>Sun, 28 Mar 2021 12:50:28 +0900</pubDate>
+        
+        
+        <guid>https://blog.yuk1h1ra.me/tags/basic-pentesting/</guid>
+        <description></description>
+        
+        <dc:creator>Yuk1h1ra</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>ctf</title>
         <link>https://blog.yuk1h1ra.me/tags/ctf/</link>
-        <pubDate>Fri, 04 Dec 2020 09:06:29 +0900</pubDate>
+        <pubDate>Sun, 28 Mar 2021 12:50:28 +0900</pubDate>
         
         
         <guid>https://blog.yuk1h1ra.me/tags/ctf/</guid>
@@ -39,7 +57,7 @@
       <item>
         <title>tryhackme</title>
         <link>https://blog.yuk1h1ra.me/tags/tryhackme/</link>
-        <pubDate>Fri, 04 Dec 2020 09:06:29 +0900</pubDate>
+        <pubDate>Sun, 28 Mar 2021 12:50:28 +0900</pubDate>
         
         
         <guid>https://blog.yuk1h1ra.me/tags/tryhackme/</guid>
@@ -57,7 +75,7 @@
       <item>
         <title>writeup</title>
         <link>https://blog.yuk1h1ra.me/tags/writeup/</link>
-        <pubDate>Fri, 04 Dec 2020 09:06:29 +0900</pubDate>
+        <pubDate>Sun, 28 Mar 2021 12:50:28 +0900</pubDate>
         
         
         <guid>https://blog.yuk1h1ra.me/tags/writeup/</guid>
