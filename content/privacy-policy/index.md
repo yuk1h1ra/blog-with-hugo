@@ -19,3 +19,6 @@ Googleアナリティクスはトラフィックデータの収集のためにCo
 
 この機能はCookieを無効にすることで収集を拒否することができますので、お使いのブラウザの設定をご確認ください。
 この規約に関して、詳しくは[Googleアナリティクス利用規約](https://marketingplatform.google.com/about/analytics/terms/jp/)をご確認ください。
+
+
+asdfasdfasdfasdfasdf
