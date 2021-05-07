@@ -1,7 +1,7 @@
 baseURL = "https://blog.yuk1h1ra.me/" # The URL of your site.
 title = "Yuk1h1ra's Knowledge Kingdom" # Title of your site
 theme = "zzo" # Name of Zzo theme folder in `themes/`.
-publishDir = "docs"
+publishDir = "./public"
 
 defaultContentLanguage = "en" # Default language to use (if you setup multilingual)
 defaultContentLanguageInSubdir = false # baseURL/en/, baseURL/kr/ ...
