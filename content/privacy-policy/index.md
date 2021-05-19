@@ -1,6 +1,6 @@
 ---
 title: "プライバシーポリシー"
-date: 2020-11-04T11:22:42+09:00
+# date: 2020-11-04T11:22:42+09:00
 description:
 draft: false
 ---
@@ -19,3 +19,7 @@ Googleアナリティクスはトラフィックデータの収集のためにCo
 
 この機能はCookieを無効にすることで収集を拒否することができますので、お使いのブラウザの設定をご確認ください。
 この規約に関して、詳しくは[Googleアナリティクス利用規約](https://marketingplatform.google.com/about/analytics/terms/jp/)をご確認ください。
+
+
+# 制定日・改定日
+- 制定日: 2020年11月04日
