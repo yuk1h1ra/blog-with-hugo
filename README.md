@@ -47,3 +47,26 @@ submoduleに追加したテーマがアップデートされた際に、それ�
 ```bash
 git submodule update --remote
 ```
+
+## ShortCodes
+
+hugoのShortCodesを用いると様々な面で便利になる。
+詳しくは[Hugo ShortCodes](https://gohugo.io/content-management/shortcodes/)もしくは、[Zzo ShortCodes](https://themes.gohugo.io//theme/hugo-theme-zzo/en/posts/shortcodes/)を参照する。
+
+参考になりそうなShortCodesについては以下に記述する。
+
+### tweet
+
+tweetのIDをURLから取得し貼り付ける
+
+```
+{{< tweet 12345678901234567890 >}}
+```
+
+### blogcard
+
+自作のShortCodeで、ブログカードを作成する際に使用する
+
+```
+{{< blogcard title="This is Title" url="https://example.com" >}}
+```
