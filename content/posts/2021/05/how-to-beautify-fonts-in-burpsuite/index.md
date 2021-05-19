@@ -2,7 +2,7 @@
 title: "BurpSuiteのガビガビなフォントを綺麗にする方法"
 date: 2021-05-19T14:21:38+09:00
 description: LinuxでBurpSuiteを使っているとフォントがガビガビで表示されてしまっているため、綺麗なフォントに変更する方法を紹介します。
-draft: true
+draft: false
 hideToc: false
 enableToc: true
 enableTocContent: false
