@@ -54,7 +54,7 @@ BurpSuiteを立ち上げた際に、フォントが以下のように綺麗に�
 sudo vim /etc/environment
 ```
 
-```
+```/etc/environment
 #
 # This file is parsed by pam_env module
 #

@@ -19,8 +19,6 @@ series:
 image:
 ---
 
-# はじめに
-
 Try Hack Meというオンラインでサイバーセキュリティを学べるサイトで学習を勧めています。
 そこでは、Walkthrough形式とCTFs形式で学ぶことができ、InputとOutputを両方学習することができます。
 
@@ -32,7 +30,7 @@ Try Hack Meというオンラインでサイバーセキュリティを学べる
 また、この記事には直接Flagの値は記載していません。自分の手で実際に実行してFlagの奪取をしてください。
 それでは、やっていきましょう。
 
-# Write UP
+## Write UP
 
 ## Task 1 Linux Challenges Introduction
 
@@ -44,7 +42,7 @@ Parrot Securityの環境構築方法については、以前ブログ記事に�
 
 <iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;" title="セキュリティに特化したParrot Security OSをVirtualBoxにインストールするまで – Yuk1h1ra's Knowledge Kingdom" src="https://hatenablog-parts.com/embed?url=https://blog.yuk1h1ra.me/posts/2020/09/install-parrot-security-os/" frameborder="0" scrolling="no"></iframe>
 
-> https://blog.yuk1h1ra.me/posts/2020/09/install-parrot-security-os/
+> <https://blog.yuk1h1ra.me/posts/2020/09/install-parrot-security-os/>
 
 ### How many visible files can you see in garrys home directory?
 
@@ -73,7 +71,7 @@ Username: bob
 Password: xxxxxxxxxx
 ```
 
-### Log into bob's account using the credentials shown in flag 1.
+### Log into bob's account using the credentials shown in flag 1
 
 flag1.txtに書かれているbobにログインし、次項からはbobで実行していきます。
 
@@ -89,7 +87,7 @@ bob@ip-10-10-14-129:~$ cat flag2.txt
 Flag 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### Flag 3 is located where bob's bash history gets stored.
+### Flag 3 is located where bob's bash history gets stored
 
 bobのbash histroyを見ればいいとのことで、自分は`history`コマンドで確認したら１行目にありました。
 
@@ -121,7 +119,7 @@ bob@ip-10-10-14-129:~$ history
    24  history
 ```
 
-### Flag 4 is located where cron jobs are created.
+### Flag 4 is located where cron jobs are created
 
 cronについてですが、自分はcronは触ったことはあるけどよくわからない状態でしたのでmanページなどで確認していました。
 `crontab -e`で現在のcrontabを編集できるため、そちらを確認したところFlagが書いてありました。
@@ -131,7 +129,7 @@ bob@ip-10-10-14-129:~$ crontab -e
 No modification made
 ```
 
-### Find and retrieve flag 5.
+### Find and retrieve flag 5
 
 flag5を探せとのことで、とりあえず`find`で検索してみたら該当するのがありました。
 
@@ -142,7 +140,7 @@ bob@ip-10-10-14-129:~$ cat /lib/terminfo/E/flag5.txt
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### "Grep" through flag 6 and find the flag. The first 2 characters of the flag is c9.
+### "Grep" through flag 6 and find the flag. The first 2 characters of the flag is c9
 
 Flag5の応用です。flag6.txtは膨大な量のテキストデータですので、うまくgrepしてあげることで奪取することができました。
 
@@ -151,7 +149,7 @@ bob@ip-10-10-14-129:~$ find / 2>/dev/null | grep flag6
 /home/flag6.txt
 ```
 
-### Look at the systems processes. What is flag 7.
+### Look at the systems processes. What is flag 7
 
 プロセス中にFlagが含まれているとのことで、それの確認をしました。
 top/htopで探す方法もあると思いますが、自分はpsコマンドで探しちゃいました。
@@ -162,7 +160,7 @@ root      1394  0.0  0.0   6008   264 ?        S    Nov09   0:00 flag7:xxxxxxxxx
 bob       3274  0.0  0.0  12944   940 pts/1    S+   00:55   0:00 grep --color=auto flag
 ```
 
-### De-compress and get flag 8.
+### De-compress and get flag 8
 
 .tar.gzの解凍方法がわかるか？って問題です。
 bobのホームディレクトリにflag8.tar.gzがあるのを確認します。
@@ -179,7 +177,7 @@ bob@ip-10-10-14-129:~$ tar -zxvf flag8.tar.gz
 flag8.txt
 ```
 
-### By look in your hosts file, locate and retrieve flag 9.
+### By look in your hosts file, locate and retrieve flag 9
 
 Linuxのhostsファイルは/etc/hostsにあります。
 確認してみると、127.0.0.1にflagと思わしき文字列が追加されていたのでそれでflagゲットです。
@@ -196,10 +194,10 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ff02::3 ip6-allhosts
 
-127.0.0.1	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.com
+127.0.0.1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.com
 ```
 
-### Find all other users on the system. What is flag 10.
+### Find all other users on the system. What is flag 10
 
 Linuxシステムでのすべてのユーザは/etc/passwdに記載されています。
 確認してみたところ変な名前のユーザがいたため、そちらがフラグになります。
@@ -213,7 +211,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:x:1002:1002:,,,:/home/xxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Task 3 Linux Functionality
 
-### Run the command flag11. Locate where your command alias are stored and get flag 11.
+### Run the command flag11. Locate where your command alias are stored and get flag 11
 
 flag11コマンドを実行してみろとあったので、とりあえず実行。
 
@@ -246,7 +244,7 @@ bob@ip-10-10-14-129:~$ cat /etc/update-motd.d/* | grep Flag
 # Flag12: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### Find the difference between two script files to find flag 13.
+### Find the difference between two script files to find flag 13
 
 ２つのファイルの相違点を確認しろってことでしたので、diffコマンドで一発でした。
 
@@ -264,7 +262,7 @@ bob@ip-10-10-14-129:~/flag13$ diff script1 script2
 > Lightoller sees xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Smith walking stiffly toward him and quickly goes to him. He yells into the Captain's ear, through cupped hands, over the roar of the steam... 
 ```
 
-### Where on the file system are logs typically stored? Find flag 14.
+### Where on the file system are logs typically stored? Find flag 14
 
 Linuxでは、ログファイルは基本的に/var/logにあります。
 確認してみたところ、それっぽいファイル`flagtourteen.txt`(Typo or grep避け)がありました。
@@ -277,7 +275,7 @@ amazon              auth.log.1     cloud-init.log         dpkg.log      fsck    
 apache2             auth.log.2.gz  cloud-init-output.log  dpkg.log.1    gdm3              kern.log.1       mysql          syslog.2.gz        wtmp.1
 ```
 
-### Find flag 15.
+### Find flag 15
 
 > Can you find information about the system, such as the kernel version etc.
 
@@ -293,7 +291,7 @@ DISTRIB_CODENAME=xenial
 DISTRIB_DESCRIPTION="Ubuntu 16.04.5 LTS"
 ```
 
-### Flag 16 lies within another system mount.
+### Flag 16 lies within another system mount
 
 自分が普段マウントする時は/mntにマウントしていたため、そちらを確認していたのですが、/media/にありましたね。
 考え方は、マウントするときと同じです。
@@ -322,7 +320,7 @@ alice@ip-10-10-14-129:~$ cat flag17
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### Find the hidden flag 18.
+### Find the hidden flag 18
 
 hidden fileときたので、適当にホームディレクトリ配下をすべて表示させたらありました。
 
@@ -350,7 +348,7 @@ alice@ip-10-10-14-129:~$ cat .flag18
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### Read the 2345th line of the file that contains flag 19.
+### Read the 2345th line of the file that contains flag 19
 
 flag19の2345行目を読めとのことでしたので、-nオプションをつけて行数を表示し、そこからgrepしちゃいました。
 2141行目が表示されているのは、内容に2345という文字列が含まれているからです。
@@ -359,11 +357,11 @@ flag19の2345行目を読めとのことでしたので、-nオプションを�
 
 ```bash
 alice@ip-10-10-14-129:~$ cat -n flag19 | grep 2345
-  2141	ac01e02345063d870cbf2aa7ee1077e6
-  2345	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  2141 ac01e02345063d870cbf2aa7ee1077e6
+  2345 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-# 終わりに
+## 終わりに
 
 今回は、Try Hack MeのLinux ChallengesをTask3までとき終わることができました。
 ブログにWriteUPを書くため、作業ログを取りながら解いていく形になり、結果としてTask3を終えるまで合計2時間くらいかかってしまいました。

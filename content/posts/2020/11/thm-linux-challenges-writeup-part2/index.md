@@ -19,16 +19,16 @@ series:
 image:
 ---
 
-# はじめに
+## はじめに
 
 [前回](https://blog.yuk1h1ra.me/posts/2020/11/thm-linux-challenges-writeup-part1/)に引き続き、TryHackMeのLinux ChallengesのWriteUPです。
 今回は、Task4までの解法になります。
 
-# WriteUP
+## WriteUP
 
 ## Task 4 Data Representation, Strings and Permissions
 
-### Find and retrieve flag 20.
+### Find and retrieve flag 20
 
 まずは、flag20を確認します。
 
@@ -56,7 +56,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 >>> 
 ```
 
-### Inspect the flag21.php file. Find the flag.
+### Inspect the flag21.php file. Find the flag
 
 flag21では、普通にcatをするだけでは見つけられないようになっていました。
 自分はvimで開いてしまいましたが、`cat -A`を使う方法もあるそうです。
@@ -67,7 +67,7 @@ alice@ip-10-10-239-217:~$ find / 2>/dev/null | grep flag21.php
 alice@ip-10-10-239-217:~$ vim ../bob/flag21.php 
 ```
 
-### Locate and read flag 22. Its represented as hex.
+### Locate and read flag 22. Its represented as hex
 
 ファイルを確認すると16進で書かれたflagが出てきました。これらをASCIIに変換する必要があります。
 (なんとなく、41を見たらA, 61をみたらaだなという感覚を持っておくといいかもしれないです)
@@ -77,7 +77,7 @@ alice@ip-10-10-239-217:~$ xxd -r -p flag22
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxalice@ip-10-10-239-217:~$ 
 ```
 
-### Locate, read and reverse flag 23.
+### Locate, read and reverse flag 23
 
 とても便利な`rev`コマンドというのを調べていて見つけたので、それでflagをゲットしました。
 
@@ -86,7 +86,7 @@ alice@ip-10-10-239-217:~$ cat flag23 | rev
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### Analyse the flag 24 compiled C program. Find a command that might reveal human readable strings when looking in the machine code code.
+### Analyse the flag 24 compiled C program. Find a command that might reveal human readable strings when looking in the machine code code
 
 flag24はC言語で書かれコンパイルされた物だそうです。
 とりあえず`file`でファイルの確認をしていきます。
@@ -110,12 +110,12 @@ CTFで表層解析をする際にとりあえず打っとけ！ということ�
 alice@ip-10-10-239-217:/home/garry$ strings flag24
 ```
 
-### Find flag 26 by searching the all files for a string that begins with 4bceb and is 32 characters long. 
+### Find flag 26 by searching the all files for a string that begins with 4bceb and is 32 characters long
 
 自分は最初以下のコマンドで実行していたのですが、時間がかかりすぎていたり、うまくフラグが取れなかったのでカンニングしちゃいました。
 
 ```bash
-$ find / -type f 2>/dev/null | xargs grep -E '^4bceb' 2>/dev/null
+find / -type f 2>/dev/null | xargs grep -E '^4bceb' 2>/dev/null
 ```
 
 考え方はあっていたのですが、細かいオプションとかですかね。。。？
@@ -133,7 +133,7 @@ Binary file /var/cache/apt/srcpkgcache.bin matches
 /home/bob/.bash_history:9daf3281745c2d75fc6e992ccfdedfcd
 ```
 
-### Locate and retrieve flag 27, which is owned by the root user.
+### Locate and retrieve flag 27, which is owned by the root user
 
 flag27はパーミッション関係でした。管理者権限で一発で終わりですね。
 
@@ -152,7 +152,7 @@ alice@ip-10-10-179-249:~$ uname --kernel-release
 4.4.xxxxxxxxxx
 ```
 
-### Find the file called flag 29 and do the following operations on it:
+### Find the file called flag 29 and do the following operations on it
 
 > 1. Remove all spaces in file.
 > 2. Remove all new line spaces.
@@ -170,7 +170,7 @@ atmelpericulisocurreret.Dicoverearaccusamusuex,
 xxxxxxxxxxxxxxxxxxxxx.alice@ip-10-10-97-2:/home/garry$ 
 ```
 
-# 終わりに
+## 終わりに
 
 今回はTryHackMeのLinux ChallengesのTask4のWriteUPを書きました。
 使ったことはあるけど、詳しくは知らない、なんとなく名前だけ知っているコマンドなどもあり、こうやって使うのか〜と勉強になりながら解いていくことができました。

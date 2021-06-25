@@ -19,7 +19,7 @@ series:
 image:
 ---
 
-# はじめに
+## はじめに
 
 [Part1](https://blog.yuk1h1ra.me/posts/2020/11/thm-linux-challenges-writeup-part1/)や、[Part2](https://blog.yuk1h1ra.me/posts/2020/11/thm-linux-challenges-writeup-part2/)に続いて第３回になりました。
 
@@ -27,11 +27,11 @@ image:
 
 それでは解いていきましょう。
 
-# WriteUP
+## WriteUP
 
 ## Task 5 SQL, FTP, Groups and RDP
 
-### Use curl to find flag 30.
+### Use curl to find flag 30
 
 `curl`を使ってflag30を奪取しましょうとあったので、sshで接続していない端末にて、curlコマンドを実行して終了です。
 
@@ -40,7 +40,7 @@ $ curl 10.10.230.39
 flag30:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### Flag 31 is a MySQL database name.
+### Flag 31 is a MySQL database name
 
 MySQLの問題ですね。
 
@@ -62,7 +62,7 @@ mysql> show databases;
 5 rows in set (0.01 sec)
 ```
 
-### Bonus flag question, get data out of the table from the database you found above!
+### Bonus flag question, get data out of the table from the database you found above
 
 こちらもフラグのあったデータベースから、データを取得して終了です。
 
@@ -84,7 +84,7 @@ mysql> select * from flags;
 1 row in set (0.00 sec)
 ```
 
-### Using SCP, FileZilla or another FTP client download flag32.mp3 to reveal flag 32.
+### Using SCP, FileZilla or another FTP client download flag32.mp3 to reveal flag 32
 
 SCPまたは、FileZillaなどを用いてflag32.mp3をダウンロードしろとのこと。
 
@@ -98,7 +98,7 @@ mp3ファイルでしたので、VLCで開いたところフラグの音声が�
 
 が、自分はVMのオーディオ設定をしていなかったため、そこは注意が必要です。
 
-### Flag 33 is located where your personal $PATH's are stored.
+### Flag 33 is located where your personal $PATH's are stored
 
 Linuxの基本的な内容を説いている問題です。
 個人のPATHをどこに記述するかの話ですね。
@@ -142,7 +142,7 @@ flag35_xxxxxxx: x :1005:
 (中略)
 ```
 
-### Find the user which is apart of the "hacker" group and read flag 36.
+### Find the user which is apart of the "hacker" group and read flag 36
 
 先程、`/etc/group`で確認したところ、hackerグループに属しているのはbobでした。
 
@@ -157,7 +157,7 @@ bob@ip-10-10-230-39:~$ cat /etc/flag36
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-# おわりに
+## おわりに
 
 これで、TryHackMeのLinux Challengesのすべての問題のWriteUPが終了しました。
 

@@ -31,7 +31,7 @@ Hydraでは並列処理することにより高速にパスワードクラッキ
 コマンドラインでの使用法は次のとおりです。
 
 ```bash
-$ hydra [some command line options] [-s PORT] TARGET PROTOCOL [MODULE-OPTIONS]
+hydra [some command line options] [-s PORT] TARGET PROTOCOL [MODULE-OPTIONS]
 ```
 
 コマンドラインオプションなどを使用してパスワードやユーザ名などを指定することができます。

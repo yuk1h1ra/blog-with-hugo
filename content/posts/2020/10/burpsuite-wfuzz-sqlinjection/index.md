@@ -89,6 +89,7 @@ Firefoxの拡張機能であるfoxyproxyがとても便利なのでそちらで�
 FoxyProxyの設定からAddをクリックし、必要な情報を入力していきます。
 
 今回は以下のように設定しました
+
 - Title: Metasploitable2
 - Proxy IP: 127.0.0.1
 - Port: 8080
