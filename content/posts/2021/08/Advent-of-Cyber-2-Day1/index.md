@@ -1,5 +1,5 @@
 ---
-title: "TryHackMeのAdvent of Cyber 2 Day1を解いてみた"
+title: "【THM: TryHackMe】Advent of Cyber 2を解いてみた【Day1】"
 date: 2021-08-13T16:31:52+09:00
 description:
 draft: false
@@ -16,7 +16,7 @@ categories:
 - WriteUP
 series:
 - Advent of Cyber 2
-image:
+image: /posts/2021/08/Advent-of-Cyber-2-Day1/img/advent-of-cyber-2-thumbnail.png
 ---
 
 ## はじめに
