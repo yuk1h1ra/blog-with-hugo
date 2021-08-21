@@ -16,7 +16,7 @@ categories:
 - WriteUP
 series:
 - Advent of Cyber 2
-image: /posts/2021/08/Advent-of-Cyber-2-Day1/img/advent-of-cyber-2-thumbnail.png
+image: /posts/2021/08/img/advent-of-cyber-2-thumbnail.png
 ---
 
 ## はじめに
