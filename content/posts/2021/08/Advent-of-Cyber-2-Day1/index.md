@@ -9,8 +9,8 @@ enableTocContent: false
 tocPosition: inner
 tocLevels: ["h2", "h3", "h4"]
 tags:
-- tryhackme
-- writeup
+- TryHackMe
+- Writeup
 - Web Exploitation
 categories:
 - WriteUP
