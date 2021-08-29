@@ -1,5 +1,5 @@
 ---
-title: "THM: TryHackMe】Advent of Cyber 2を解いてみた【Day3】"
+title: "【THM: TryHackMe】Advent of Cyber 2を解いてみた【Day3】"
 date: 2021-08-29T15:10:37+09:00
 description:
 draft: false
