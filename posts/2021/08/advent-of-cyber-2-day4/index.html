@@ -30,7 +30,7 @@
 <meta name=twitter:app:name:iphone content="Yuk1h1ra's Knowledge Kingdom">
 <meta property="twitter:title" content="【THM: TryHackMe】Advent of Cyber 2を解いてみた【Day4】">
 <meta property="twitter:description" content>
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.89.4">
 <meta name=msapplication-TileColor content="#fff">
 <meta name=theme-color content="#fff">
 <meta name=msapplication-navbutton-color content="#fff">
@@ -193,14 +193,14 @@ light
 本記事は全てのセキュリティに携わる人に向けて執筆しており、クラッキングを推奨するものではありません。本記事の手法を用いて、許可された環境以外で実行することは絶対にやめてください。
 </div>
 <h2 id=santas-watching>Santa&rsquo;s watching</h2>
-<h3 id=given-the-url-httpshibesxyzapiphp-what-would-the-entire-wfuzz-command-look-like-to-query-the-breed-parameter-using-the-wordlist-bigtxt-assume-that-bigtxt-is-in-your-current-directory>Given the URL &ldquo;<a href=http://shibes.xyz/api.php%22,>http://shibes.xyz/api.php",</a> what would the entire wfuzz command look like to query the &ldquo;breed&rdquo; parameter using the wordlist &ldquo;big.txt&rdquo; (assume that &ldquo;big.txt&rdquo; is in your current directory)</h3>
+<h3 id=given-the-url-httpshibesxyzapiphp-what-would-the-entire-wfuzz-command-look-like-to-query-the-breed-parameter-using-the-wordlist-bigtxt-assume-that-bigtxt-is-in-your-current-directory>Given the URL &ldquo;<a href=http://shibes.xyz/api.php%22>http://shibes.xyz/api.php"</a>, what would the entire wfuzz command look like to query the &ldquo;breed&rdquo; parameter using the wordlist &ldquo;big.txt&rdquo; (assume that &ldquo;big.txt&rdquo; is in your current directory)</h3>
 <blockquote>
-<p>URL「http://shibes.xyz/api.php」が与えられた時、ワードリスト「big.txt」を使用して「breed」パラメータをクエリすると、wfuzzコマンドはどのようになりますか。（「big.txt」が現在のディレクトリ配下を推定）</p>
+<p>URL「<a href=http://shibes.xyz/api.php>http://shibes.xyz/api.php</a>」が与えられた時、ワードリスト「big.txt」を使用して「breed」パラメータをクエリすると、wfuzzコマンドはどのようになりますか。（「big.txt>」が現在のディレクトリ配下を推定）</p>
 </blockquote>
-<p>これは「http://shibes.xyz/api.php」に対して、「breed」パラメータに「big.txt」を使用したwfuzzコマンドを問われています。<br>
+<p>これは「<a href=http://shibes.xyz/api.php>http://shibes.xyz/api.php</a>」に対して、「breed」パラメータに「big.txt」を使用したwfuzz&#187;コマンドを問われています。<br>
 wfuzzコマンドの使い方を理解していますか？という問題ですね。</p>
 <p>この問題が分からない場合は問題文をよく読み、wfuzzのヘルプを参照したりすると良いと思います。</p>
-<div class="alert alert-danger" role=alert data-dir=ltr>実際に「http://shibes.xyz/api.php」に対して、<br>
+<div class="alert alert-danger" role=alert data-dir=ltr>実際に「<a href=http://shibes.xyz/api.php>http://shibes.xyz/api.php</a>」に対して、<br>
 このコマンドを<strong>実行しないでください</strong></div>
 <h3 id=use-gobuster-against-the-target-you-deployed----not-the-shibesxyz-domain-to-find-the-api-directory-what-file-is-there>Use GoBuster (against the target you deployed &ndash; not the shibes.xyz domain) to find the API directory. What file is there?</h3>
 <blockquote>
@@ -327,6 +327,11 @@ See Also
 <div class=pagination-single__left-title>【THM: TryHackMe】Advent of Cyber 2を解いてみた【Day3】</div>
 </a>
 <div class=grow></div>
+<a href=https://blog.yuk1h1ra.me/posts/2021/11/advent-of-cyber-2-day5/ class=pagination-single__right>
+<div class=pagination-single__right-title>HM: TryHackMe】Advent of Cyber 2を解いてみた【Day5】</div>
+<div class=pagination-single__icon><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentcolor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03.0 1.42.39.39 1.02.39 1.41.0l6.59-6.59c.39-.39.39-1.02.0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41.0s-.39 1.02.0 1.41L16.17 11H5c-.55.0-1 .45-1 1s.45 1 1 1z"/></svg>
+</div>
+</a>
 </nav>
 <div class="modal micromodal-slide" id=modal aria-hidden=true>
 <div class=modal__overlay tabindex=-1 data-micromodal-close>
@@ -393,7 +398,7 @@ See Also
 <li><a href=#はじめに>はじめに</a></li>
 <li><a href=#santas-watching>Santa&rsquo;s watching</a>
 <ul>
-<li><a href=#given-the-url-httpshibesxyzapiphp-what-would-the-entire-wfuzz-command-look-like-to-query-the-breed-parameter-using-the-wordlist-bigtxt-assume-that-bigtxt-is-in-your-current-directory>Given the URL &ldquo;<a href=http://shibes.xyz/api.php%22,>http://shibes.xyz/api.php",</a> what would the entire wfuzz command look like to query the &ldquo;breed&rdquo; parameter using the wordlist &ldquo;big.txt&rdquo; (assume that &ldquo;big.txt&rdquo; is in your current directory)</a></li>
+<li><a href=#given-the-url-httpshibesxyzapiphp-what-would-the-entire-wfuzz-command-look-like-to-query-the-breed-parameter-using-the-wordlist-bigtxt-assume-that-bigtxt-is-in-your-current-directory>Given the URL &ldquo;<a href=http://shibes.xyz/api.php%22>http://shibes.xyz/api.php"</a>, what would the entire wfuzz command look like to query the &ldquo;breed&rdquo; parameter using the wordlist &ldquo;big.txt&rdquo; (assume that &ldquo;big.txt&rdquo; is in your current directory)</a></li>
 <li><a href=#use-gobuster-against-the-target-you-deployed----not-the-shibesxyz-domain-to-find-the-api-directory-what-file-is-there>Use GoBuster (against the target you deployed &ndash; not the shibes.xyz domain) to find the API directory. What file is there?</a></li>
 <li><a href=#fuzz-the-date-parameter-on-the-file-you-found-in-the-api-directory-what-is-the-flag-displayed-in-the-correct-post>Fuzz the date parameter on the file you found in the API directory. What is the flag displayed in the correct post?</a></li>
 </ul>
