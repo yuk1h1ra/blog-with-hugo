@@ -36,15 +36,15 @@ image: /posts/2021/08/img/advent-of-cyber-2-thumbnail.png
 
 ### Given the URL "http://shibes.xyz/api.php", what would the entire wfuzz command look like to query the "breed" parameter using the wordlist "big.txt" (assume that "big.txt" is in your current directory)
 
-> URL「http://shibes.xyz/api.php」が与えられた時、ワードリスト「big.txt」を使用して「breed」パラメータをクエリすると、wfuzzコマンドはどのようになりますか。（「big.txt」が現在のディレクトリ配下を推定）
+> URL「<http://shibes.xyz/api.php>」が与えられた時、ワードリスト「big.txt」を使用して「breed」パラメータをクエリすると、wfuzzコマンドはどのようになりますか。（「big.txt>」が現在のディレクトリ配下を推定）
 
-これは「http://shibes.xyz/api.php」に対して、「breed」パラメータに「big.txt」を使用したwfuzzコマンドを問われています。
+これは「<http://shibes.xyz/api.php>」に対して、「breed」パラメータに「big.txt」を使用したwfuzz>>コマンドを問われています。
 wfuzzコマンドの使い方を理解していますか？という問題ですね。
 
 この問題が分からない場合は問題文をよく読み、wfuzzのヘルプを参照したりすると良いと思います。
 
 {{< alert theme="danger" dir="ltr" >}}
-実際に「http://shibes.xyz/api.php」に対して、
+実際に「<http://shibes.xyz/api.php>」に対して、
 このコマンドを**実行しないでください**
 {{< /alert >}}
 
