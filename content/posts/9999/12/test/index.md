@@ -1,7 +1,7 @@
 ---
 title: "Test"
 date: 9999-12-31T12:59:59+09:00
-description: 
+description:
 draft: true
 hideToc: false
 enableToc: true
@@ -16,19 +16,3 @@ series:
 -
 image:
 ---
-
-## Test
-
-{{< tweet 1376407534949425156 >}}
-
-## Codeblock
-
-```txt
-asdfasdf
-```
-
-```bash
-ls -al
-asdfasdf
-asdfasdf
-```
