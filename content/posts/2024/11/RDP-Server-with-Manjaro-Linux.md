@@ -2,7 +2,7 @@
 title: "Manjaro LinuxでRDPサーバーをセットアップする方法"
 date: 2024-11-24T23:25:33+09:00
 description:
-draft: true
+draft: false
 hideToc: false
 enableToc: true
 enableTocContent: false
