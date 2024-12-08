@@ -38,7 +38,7 @@ Hugoでは、様々なテーマを選択することができます。
 ブログのディレクトリを/[year]/[month]/[title]に設定しているため、以下のコマンドで一発で作成できる
 
 ```bash
-hugo-new-post title
+hugo new content posts/[year]/[month]/[title].md
 ```
 
 ### テーマリポジトリの更新
