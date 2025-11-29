@@ -1,4 +1,6 @@
 <!-- Analytics -->
-{{ if not .Site.IsServer }}
-  {{ partial "google/gtag" . }}
+{{ with .Site }}
+  {{ if (and (isset . "IsServer") .IsServer) }}
+    {{ partial "google/gtag" . }}
+  {{ end }}
 {{ end }}
