@@ -38,7 +38,7 @@ Hugoでは、様々なテーマを選択することができます。
 ブログのディレクトリを/[year]/[month]/[title]に設定しているため、以下のコマンドで一発で作成できる
 
 ```bash
-hugo new content posts/[year]/[month]/[title].md
+hugo new content posts/[year]/[month]/[title]/index.md
 ```
 
 ### テーマリポジトリの更新
@@ -70,4 +70,18 @@ tweetのIDをURLから取得し貼り付ける
 
 ```txt
 {{< blogcard title="This is Title" url="https://example.com" >}}
+```
+
+### md形式の画像からzzoの画像に変換
+
+#### 検索（Find）
+
+```
+!\[(.*?)\]\((.*?)\)
+```
+
+#### 置換（Replace）
+
+```
+{{< img src="/posts/2025/11/$2" >}}
 ```
