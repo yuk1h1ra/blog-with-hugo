@@ -14,8 +14,8 @@ tags:
 categories:
 - BugBounty
 series:
--
-image:
+- null
+image: null
 ---
 
 ![](img/Screenshot_20200929_171229.png)

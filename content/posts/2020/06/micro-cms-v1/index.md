@@ -15,8 +15,8 @@ tags:
 categories:
 - CTF
 series:
--
-image:
+- null
+image: null
 ---
 
 **注意** CTFの解法が以下に載っています。自力で解きたい方は解法を見る前にブラウザバックしてください。

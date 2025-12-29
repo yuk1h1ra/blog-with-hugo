@@ -25,9 +25,9 @@ image: /posts/2021/08/img/advent-of-cyber-2-thumbnail.png
 今回はOWASP ZAPを使ってXSSを発見する章になります。
 基本的には本文中に解説が乗っており、OWASP ZAPを使ったことがない人を対象としている感じがしました。
 
-{{< notice warning "警告" >}}
+{{< alert icon="fire" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 本記事は全てのセキュリティに携わる人に向けて執筆しており、クラッキングを推奨するものではありません。本記事の手法を用いて、許可された環境以外で実行することは絶対にやめてください。
-{{< /notice >}}
+{{< /alert>}}
 
 ## Be careful with what you wish on a Christmas night
 

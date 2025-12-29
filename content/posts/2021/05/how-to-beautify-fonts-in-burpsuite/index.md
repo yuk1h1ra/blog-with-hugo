@@ -13,8 +13,8 @@ tags:
 categories:
 - Tools
 series:
--
-image:
+- null
+image: null
 ---
 
 普段プロキシツールであるBurpSuiteを使用していますが、そのフォントがあまりにも汚くとてもじゃないが読めたものじゃない状況でした。

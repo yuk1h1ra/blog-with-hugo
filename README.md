@@ -83,5 +83,5 @@ tweetのIDをURLから取得し貼り付ける
 #### 置換（Replace）
 
 ```
-{{< img src="/posts/2025/11/$2" >}}
+{{< figure src="/posts/2025/11/$2" >}}
 ```

@@ -13,8 +13,8 @@ tags:
 categories:
 - 
 series:
--
-image:
+- null
+image: null
 ---
 
 ## はじめに
@@ -77,7 +77,7 @@ $ sudo systemctl enable --now xrdp-sesman.service
 
 Windowsのリモートデスクトップ接続を開き、ManjaroサーバーのIPアドレスを入力します。xrdpのログイン画面が表示されたことが確認できました。
 
-{{< img src="/posts/2024/11/img/image.png" >}}
+{{< figure src="/posts/2024/11/img/image.png" >}}
 
 ### 5. KDE Plasmaの表示問題を修正
 
@@ -103,7 +103,7 @@ fi
 
 再度、サービスを再起動し、無事接続されることを確認しました。
 
-{{< img src="/posts/2024/11/img/image-1.png" >}}
+{{< figure src="/posts/2024/11/img/image-1.png" >}}
 
 ## ラップトップのフタを閉じてもスリープさせない設定
 

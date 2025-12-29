@@ -26,9 +26,9 @@ image: /posts/2021/08/img/advent-of-cyber-2-thumbnail.png
 
 問題はBeginnersレベルを対象にしているので、興味がある方は一度解いてみることをオススメします。
 
-{{< notice warning "警告" >}}
+{{< alert icon="fire" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 本記事は全てのセキュリティに携わる人に向けて執筆しており、クラッキングを推奨するものではありません。本記事の手法を用いて、許可された環境以外で実行することは絶対にやめてください。
-{{< /notice >}}
+{{< /alert>}}
 
 ## [Day1] A Christmas Crisis
 

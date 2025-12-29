@@ -23,9 +23,9 @@ image: /posts/2021/08/img/advent-of-cyber-2-thumbnail.png
 
 今回はnmapを使って情報収集する方法を学ぶ章になっています。
 
-{{< notice warning "警告" >}}
+{{< alert icon="fire" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 本記事は全てのセキュリティに携わる人に向けて執筆しており、クラッキングを推奨するものではありません。本記事の手法を用いて、許可された環境以外で実行することは絶対にやめてください。
-{{< /notice >}}
+{{< /alert>}}
 
 ## What's Under the Christmas Tree?
 

@@ -15,8 +15,8 @@ tags:
 categories:
 - BugBounty
 series:
-- 
-image:
+- null
+image: null
 ---
 
 ![hydra-icon](./img/01-xhydra-icon.jpg)

@@ -15,8 +15,8 @@ tags:
 categories:
 - BugBounty
 series:
--
-image: 
+- null
+image: null
 ---
 
 ![dirbuster](./img/01-dirbuster.png)
