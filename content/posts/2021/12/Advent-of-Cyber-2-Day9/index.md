@@ -23,9 +23,9 @@ image: /posts/2021/08/img/advent-of-cyber-2-thumbnail.png
 今回は基本的なftpサーバへの接続方法やコマンドを学ぶ章になっています。
 また、設定の不備によってftpからシェルを奪取する基本的な方法について学ぶことができます。
 
-{{< notice warning "警告" >}}
+{{< alert icon="fire" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 本記事は全てのセキュリティに携わる人に向けて執筆しており、クラッキングを推奨するものではありません。本記事の手法を用いて、許可された環境以外で実行することは絶対にやめてください。
-{{< /notice >}}
+{{< /alert>}}
 
 ## Anyone can be Santa!
 

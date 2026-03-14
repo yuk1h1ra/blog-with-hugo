@@ -26,9 +26,9 @@ image: /posts/2021/08/img/advent-of-cyber-2-thumbnail.png
 UNIONを使ってデータベースの中身を見ていく基本的な内容ですが、日頃から取り組んでいないとついつい忘れてしまいがちな項目になると思います。
 SQLインジェクションという基本的な脆弱性の問題のため、いい復習の機会になると思います。
 
-{{< notice warning "警告" >}}
+{{< alert icon="fire" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 本記事は全てのセキュリティに携わる人に向けて執筆しており、クラッキングを推奨するものではありません。本記事の手法を用いて、許可された環境以外で実行することは絶対にやめてください。
-{{< /notice >}}
+{{< /alert>}}
 
 ## Someone stole Santa's gift list!
 

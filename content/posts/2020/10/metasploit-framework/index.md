@@ -14,8 +14,8 @@ tags:
 categories:
 - BugBounty
 series:
--
-image:
+- null
+image: null
 ---
 
 ## 始めに

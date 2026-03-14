@@ -15,8 +15,8 @@ tags:
 categories:
 - BugBounty
 series:
--
-image:
+- null
+image: null
 ---
 
 ![thumbnail](img/01_parrot-security-f063de7e.png)

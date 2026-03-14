@@ -22,9 +22,9 @@ image: /posts/2021/08/img/advent-of-cyber-2-thumbnail.png
 
 今回はWebサーバーで用いられているミドルウェアのバージョン情報から既知の脆弱性を探し、そこからWebサーバー内の情報を奪取する章になります。
 
-{{< notice warning "警告" >}}
+{{< alert icon="fire" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 本記事はすべてのセキュリティに携わる人に向けて執筆しており、クラッキングを推奨するものではありません。本記事の手法を用いて、許可された環境以外で実行することは絶対にやめてください。
-{{< /notice >}}
+{{< /alert>}}
 
 ## Ready, set, elf.
 

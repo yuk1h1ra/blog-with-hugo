@@ -26,9 +26,9 @@ TryHackMeのAdvent of Cyber 2 Day18のWriteUPです。
 
 今回もリバース・エンジニアリングの章になります。
 
-{{< notice warning "警告" >}}
+{{< alert icon="fire" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 本記事はすべてのセキュリティに携わる人に向けて執筆しており、クラッキングを推奨するものではありません。本記事の手法を用いて、許可された環境以外で実行することは絶対にやめてください。
-{{< /notice >}}
+{{< /alert>}}
 
 ## The Bits of Christmas
 

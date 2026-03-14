@@ -16,7 +16,7 @@ categories:
 - CTF
 series:
 - Linux Challenges - THM
-image:
+image: null
 ---
 
 Try Hack Meというオンラインでサイバーセキュリティを学べるサイトで学習を勧めています。

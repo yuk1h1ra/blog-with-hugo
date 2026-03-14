@@ -16,7 +16,7 @@ categories:
 - CTF
 series:
 - Linux Challenges - THM
-image:
+image: null
 ---
 
 ## はじめに

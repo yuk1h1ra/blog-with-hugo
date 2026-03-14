@@ -13,6 +13,6 @@ tags:
 categories:
 -
 series:
--
-image:
+- null
+image: null
 ---

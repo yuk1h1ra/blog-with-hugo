@@ -1,209 +1,181 @@
-logoText = "YKK" # Logo text that appears in the site navigation bar.
-logoType = "short" # long, short -> short: squre shape includes logo text, long: rectangle shape not includes logo text
-logo = true # Logo that appears in the site navigation bar.
-description = "ハッキング, CTF, WriteUP, Toolsなど、サイバーセキュリティに特化した個人ブログ" # for SEO
-meta_image = "/images/meta/metaimage.png"
-custom_css = ["scss/font.scss"] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
-custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
-useFaviconGenerator = true # https://www.favicon-generator.org/
-languagedir = "ltr" # ltr / rtl
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customise the display of your website.
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/configuration/#theme-parameters
 
-themeOptions = ["dark", "light"] # select options for site color theme
-notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "privacy-policy", "disclaimer"] # not allowed page types in home page. type can be set in front matter or default to folder name.
-notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "privacy-policy", "disclaimer"] # not allowed page types in home page sidebar(recent post titles).
-notAllowedTypesInArchive = ["about", "talks", "showcase", "privacy-policy", "disclaimer"] # not allowed page types in archive page
-notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery", "privacy-policy", "disclaimer"]
-enablePinnedPosts = true # show pinned posts first in the main view
+colorScheme = "blowfish"
+defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = false
 
-viewportSize = "normal" # widest, wider, wide, normal, narrow
-enableUiAnimation = true
-hideSingleContentsWhenJSDisabled = false
-minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
+enableA11y = false
+enableSearch = true
+enableCodeCopy = false
+enableStructuredBreadcrumbs = false
+# enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
-# appbar
-enableAppbarSearchIcon = false
-enableAppbarLangIcon = false
+replyByEmail = false
 
-# header
-homeHeaderType = "text" # text, img, slide, typewriter
-hideHomeHeaderWhenMobile = false
+# mainSections = ["section1", "section2"]
+# robots = ""
 
-# menu
-showMobileMenuTerms = ["tags", "categories", "series"]
+disableImageOptimization = false
+disableImageOptimizationMD = false
+disableTextInHeader = false
+# backgroundImageWidth = 1200
 
-# navbar
-enableThemeChange = true # site color theme
+# defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
+# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+# defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
+hotlinkFeatureImage = false
+# imagePosition = "50% 50%"
 
-# body
-enableBreadcrumb = true # breadcrumb for list, single page
-enableSearch = true # site search with Fuse
-enableSearchHighlight = true # when true, search keyword will be highlighted
-enableGoToTop = true # scroll to top
-enableWhoami = true # at the end of single page
-summaryShape = "classic" # card, classic, compact
-archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
-archivePaginate = 13 # items per page
-paginateWindow = 1 # setting it to 1 gives 7 buttons, 2 gives 9, etc. If set 1: [1 ... 4 5 6 ... 356] [1 2 3 4 5 ... 356] etc
-talksPaginate = 8 # items per page
-talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
+# highlightCurrentMenuArea = true
+# smartTOC = true
+# smartTOCHideUnfocusedChildren = true
 
-# whoami: usage - home page sidebar, single page bottom of post. all values can be empty
-myname = "yuk1h1ra"
-email = ""
-whoami = "Security Engineer"
-bioImageUrl = "" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
-useGravatar = false # we use this option highest priority
-location = "Japan"
-organization = ""
-link = "https://github.com/yuk1h1ra"
+fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384", "sha256"
 
-# sidebar
-enableBio = true # in home page sidebar
-enableBioImage = true # in home page sidebar
-enableSidebar = true # Set to false to create the full width of the content.
-enableSidebarTags = true # if you want to use tags.
-enableSidebarSeries = true
-enableSidebarCategories = true
-enableHomeSidebarTitles = true
-enableListSidebarTitles = true
-enableToc = true # single page table of contents, you can replace this param to toc(toc = true)
-hideToc = false # Hide or Show toc
-tocPosition = "inner" # inner, outer
-tocFolding = false
-enableTocSwitch = true # single page table of contents visibility switch
-itemsPerCategory = 5 # maximum number of posts shown in the sidebar.
-sidebarPosition = "right" # bio, profile component layout position
-tocLevels = ["h2", "h3", "h4"] # minimum h2, maximum h4 in your article
-enableSidebarPostsByOrder = false # another lists in the sidebar
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v11.next.forgejo.org"
 
-# footer
-showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
-showFeedLinks = true # RSS Feed 
-showSocialLinks = true # email, facebook, twitter ...
-enableLangChange = false # show button at bottom left of footer.
+[header]
+  layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
-# service
-googleTagManager = "" # GTM-XXXXXX
-baiduAnalytics = "" # alternative of google analytics
-enableBusuanzi = false # if set true, total page view, total unique visitors show up in the footer.
-busuanziSiteUV = true # unique visitors (total number of visitors)
-busuanziSitePV = true # site total page view count
-busuanziPagePV = true # post view count
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
 
-# comment
-enableComment = true
-disqus_shortname = "" 
-commento = false
+[homepage]
+  layout = "profile" # valid options: page, profile, hero, card, background, custom
+  #homepageImage = "IMAGE.jpg" # used in: hero, and card
+  showRecent = true
+  showRecentItems = 5
+  showMoreLink = true
+  showMoreLinkDest = "/posts/"
+  cardView = false
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = false # only used when layout equals background
+  disableHeroImageFilter = false # only used when layout equals hero
 
-[gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
-  clientId = ""           # Your client ID
-  clientSecret = ""       # Your client secret
+[article]
+  showDate = true
+  showViews = false
+  showLikes = false
+  showDateOnlyInArticle = false
+  showDateUpdated = false
+  showAuthor = true
+  # showAuthorBottom = false
+  showHero = false
+  # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  showBreadcrumbs = false
+  showDraftLabel = true
+  showEdit = false
+  # editURL = "https://github.com/username/repo/"
+  editAppendPath = true
+  seriesOpened = false
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = false
+  # showRelatedContent = false
+  # relatedContentLimit = 3
+  showTaxonomies = false # use showTaxonomies OR showCategoryOnly, not both
+  showCategoryOnly = false # use showTaxonomies OR showCategoryOnly, not both
+  showAuthorsBadges = false
+  showWordCount = true
+  # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
+  showZenMode = false
 
-[utterances]       # https://utteranc.es/
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
-  message = ""      # Optional
-  link = ""         # Optional
+[list]
+  showHero = false
+  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  showBreadcrumbs = false
+  showSummary = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  showCards = false
+  orderByWeight = false
+  groupByYear = true
+  cardView = false
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
 
-[gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
-  clientId = ""           # Your client ID
-  clientSecret = ""       # Your client secret
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
 
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
-[valine]
-  enable = false
-  appId = '你的appId'
-  appKey = '你的appKey'
-  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
-  verify = false # Verification code
-  avatar = 'mm' 
-  placeholder = '说点什么吧...'
-  visitor = false
+[taxonomy]
+  showTermCount = true
+  showHero = false
+  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  cardView = false
 
-[changyan]
-  changyanAppid = ""        # Changyan app id             # 畅言
-  changyanAppkey = ""       # Changyan app key
+[term]
+  showHero = false
+  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
+  groupByYear = false
+  cardView = false
+  cardViewScreenWidth = false
 
-[livere]
-  livereUID = ""            # LiveRe UID                  # 来必力
+[firebase]
+  # apiKey = "XXXXXX"
+  # authDomain = "XXXXXX"
+  # projectId = "XXXXXX"
+  # storageBucket = "XXXXXX"
+  # messagingSenderId = "XXXXXX"
+  # appId = "XXXXXX"
+  # measurementId = "XXXXXX"
 
-# Isso: https://posativ.org/isso/
-[isso]
-  enable = false
-  scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
-  dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+[fathomAnalytics]
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
 
-[socialOptions] # if set, social icons will show up.
-  email = ""
-  phone = ""
-  facebook = ""
-  twitter = "https://twitter.com/yuk1h1ra_me"
-  github = "https://github.com/yuk1h1ra"
-  stack-overflow = ""
-  instagram = ""
-  google-plus = ""
-  youtube = ""
-  medium = ""
-  tumblr = ""
-  linkedin = ""
-  pinterest = ""
-  stack-exchange = ""
-  telegram = ""
-  steam = ""
-  weibo = ""
-  douban = ""
-  csdn = ""
-  gitlab = ""
-  mastodon = ""
-  jianshu = ""
-  zhihu = ""
-  signal = ""
-  whatsapp = ""
-  matrix = ""
-  xmpp = ""
-  dev-to = ""
-  gitea = ""
-  google-scholar = ""
-  twitch = ""
+[umamiAnalytics]
+  # websiteid = "ABC12345"
+  # domain = "llama.yoursite.com"
+  # dataDomains = "yoursite.com,yoursite2.com"
+  # scriptName = ""
+  # enableTrackEvent = true
 
-[donationOptions]
-  enable = false # if set, the donation button will show up on the single page.
-  alipay = "" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/
-  wechat = "" # Wechat pay QR Code image (example path: same as above)
-  paypal = "" # Paypal URL
-  patreon = "" # Patreon URL
-  bitcoin = "" # example path: images/donation/bitcoin-code-image.png
+[selineAnalytics]
+  # token = "XXXXXX"
+  # enableTrackEvent = true
 
-[copyrightOptions]
-  enableCopyrightLink = false # if set, you can add copyright link
-  copyrightLink = ""
-  copyrightLinkImage = ""
-  copyrightLinkText = ""
+[buymeacoffee]
+  # identifier = ""
+  # globalWidget = true
+  # globalWidgetMessage = "Hello"
+  # globalWidgetColor = "#FFDD00"
+  # globalWidgetPosition = "right"
 
-# possible share name: "facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line", "whatsapp", "telegram"
-[[share]]
-  name = "facebook"
-[[share]]
-  name = "twitter"
-  username = "yuk1h1ra_me"
-[[share]]
-  name = "reddit"
-[[share]]
-  name = "linkedin"
-[[share]]
-  name = "line"
-[[share]]
-  name = "telegram"
+[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""
+  # fediverse = ""
 
-[[footerLinks]]
-  name = "プライバシーポリシー"
-  link = "/privacy-policy"
-[[footerLinks]]
-  name = "免責事項"
-  link = "/disclaimer"
+[rssnext]
+  # feedId = ""
+  # userId = ""
+
+[advertisement]
+  # adsense = ""
