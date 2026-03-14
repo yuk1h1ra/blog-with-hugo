@@ -1,18 +1,16 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-description:
-draft: false
-hideToc: false
-enableToc: true
-enableTocContent: false
-tocPosition: inner
-tocLevels: ["h2", "h3", "h4"]
+lastmod: {{ .Date }}
+draft: true
+description: ""
+summary: ""
 tags:
--
+  -
 categories:
--
+  -
 series:
-- null
-image: null
+  -
+featureimage: ""
+showTableOfContents: true
 ---
